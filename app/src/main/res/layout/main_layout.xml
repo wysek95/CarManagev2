@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    
+    <Spinner
+        android:id="@+id/auto_choose_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/burningTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Burning on 100km" />
+
+        <TextView
+            android:id="@+id/burning_Text_View_Edit"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="93dp"
+            android:layout_marginEnd="151dp"
+            android:layout_toEndOf="@+id/burningTextView"
+            android:text="TextView" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/go_to_tank_buttton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ikonatankowanie"
+            android:text="New Tankup" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_below="@id/go_to_tank_buttton"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/repair_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="125dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginEnd="148dp"
+                android:drawableTop="@drawable/ikonaklucz"
+                android:text="New fix" />
+            <Button
+                android:id="@+id/collision_button"
+                android:layout_width="wrap_content"
+                android:layout_height="87dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="0dp"
+                android:layout_marginEnd="286dp"
+                android:drawableTop="@drawable/ikonakolizja"
+                android:text="New event" />
+
+            <Button
+                android:id="@+id/add_car_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="264dp"
+                android:layout_marginEnd="0dp"
+                android:drawableTop="@drawable/ikonaautko"
+                android:text="Add Car" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

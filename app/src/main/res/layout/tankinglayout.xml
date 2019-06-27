@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/dateView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/date" />
+    <EditText
+        android:id="@+id/dateTank"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:longClickable="false"
+        android:focusable="false"
+        android:inputType="date"/>
+    <TextView
+        android:id="@+id/mileageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mileage" />
+    <EditText
+        android:id="@+id/mileage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"/>
+    <TextView
+        android:id="@+id/litersView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/liters" />
+    <EditText
+        android:id="@+id/liters"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"/>
+    <TextView
+        android:id="@+id/costView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cost" />
+    <EditText
+        android:id="@+id/cost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/confirm" />
+</LinearLayout>
